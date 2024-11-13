@@ -60,3 +60,32 @@ A simple user authentication system implemented with PHP, MySQL, and Bootstrap. 
 - Log out via the link in the sidebar to end the session.
 - This will destroy the session and return you to the login page.
 
+## Security Features
+
+### Password Hashing:
+- Passwords are securely hashed using PHP's `password_hash()` function before being stored in the database. This ensures that even if the database is compromised, passwords remain protected.
+
+### CSRF Protection:
+- All forms are protected with CSRF tokens. A unique CSRF token is generated and validated before processing form submissions, which prevents cross-site request forgery attacks.
+
+### SQL Injection Prevention:
+- All SQL statements use prepared statements with bound parameters, preventing SQL injection attacks. This ensures that user input is treated as data and not executable code.
+
+---
+
+## Code Highlights
+
+### CSRF Token Generation and Validation:
+- The `csrf.php` file contains functions for generating and validating CSRF tokens. A token is generated when the form is created and stored in the session. It is then validated upon form submission to ensure the request is legitimate.
+
+### Session Management:
+- PHP sessions are used to manage user authentication. When a user successfully logs in, a session is started, and the user’s information is stored in the session. This ensures that users must be logged in to access the dashboard and other protected pages.
+
+### Username Uniqueness Validation:
+- During registration, the system checks if the chosen username is already taken. If the username is already in use, the system provides an error message and prompts the user to choose a different one.
+
+### Blocking Temporary Emails:
+- The registration form blocks disposable or temporary email addresses (e.g., from services like `mailinator.com` and `tempmail.com`) to help prevent fake or spam registrations.
+
+### Toggle Password Visibility:
+- JavaScript is used in the login and registration forms to allow users to toggle password visibility. This improves the user experience by letting users see the password they are typing.
