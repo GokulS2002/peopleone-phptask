@@ -11,20 +11,6 @@ Features
      Responsive Design: The UI is built with Bootstrap, making it responsive and accessible.
 
 
-Database Setup:
-
-Create a MySQL database (e.g., auth_system).
-
-Run the following SQL commands to create the users table:
-
-       CREATE TABLE users (
-               id INT AUTO_INCREMENT PRIMARY KEY,
-               username VARCHAR(50) UNIQUE NOT NULL,
-               email VARCHAR(100) UNIQUE NOT NULL,
-               password VARCHAR(255) NOT NULL,
-               created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-       );
-
 
 Configure Database Connection:
 
