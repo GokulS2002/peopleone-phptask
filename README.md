@@ -34,4 +34,4 @@ A simple user authentication system implemented with PHP, MySQL, and Bootstrap. 
        password VARCHAR(255) NOT NULL,
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
-##Usage
+
