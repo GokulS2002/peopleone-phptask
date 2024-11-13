@@ -34,7 +34,7 @@ A simple user authentication system implemented with PHP, MySQL, and Bootstrap. 
        password VARCHAR(255) NOT NULL,
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
-## Usage
+
 
 
 ## Running Locally
@@ -62,7 +62,11 @@ A simple user authentication system implemented with PHP, MySQL, and Bootstrap. 
 ### Step 5: Access the Application:
 - Open your browser and visit `http://localhost/auth_system` to view the authentication system in action.
 
-- 
+
+
+## Usage
+
+
 ### Register:
 
 - Go to `register.php` to create a new account.
