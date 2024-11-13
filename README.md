@@ -36,6 +36,33 @@ A simple user authentication system implemented with PHP, MySQL, and Bootstrap. 
    );
 ## Usage
 
+
+## Running Locally
+
+### Prerequisites:
+- **PHP 7.4+** (or higher)
+- **MySQL database server**
+- Local server environment (e.g., XAMPP, WAMP, MAMP, etc.)
+
+### Step 1: Set Up the Server:
+- Download and install a local server environment such as [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](https://www.wampserver.com/).
+- Start the Apache and MySQL services in your chosen server environment.
+
+### Step 2: Place the Project Files:
+- Copy the project files (including `index.php`, `login.php`, `register.php`, etc.) into the `htdocs` (XAMPP) or `www` (WAMP) directory.
+
+### Step 3: Create the Database:
+- Open phpMyAdmin (usually accessible at `http://localhost/phpmyadmin`).
+- Create a new database (e.g., `auth_system`).
+- Run the SQL script from the **Database Setup** section to create the necessary tables.
+
+### Step 4: Configure the Database Connection:
+- Open the `config.php` file and update it with your MySQL database credentials as described in the **Configure Database Connection** section.
+
+### Step 5: Access the Application:
+- Open your browser and visit `http://localhost/auth_system` to view the authentication system in action.
+
+- 
 ### Register:
 
 - Go to `register.php` to create a new account.
