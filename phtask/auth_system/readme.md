@@ -1,4 +1,4 @@
-##Auth System
+## Features
 A simple user authentication system implemented with PHP, MySQL, and Bootstrap. This system provides essential authentication features, including user registration, login, session management, and protection against CSRF attacks. The UI is built using Bootstrap for responsiveness and accessibility.
 
 Features
