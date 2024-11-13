@@ -34,4 +34,29 @@ A simple user authentication system implemented with PHP, MySQL, and Bootstrap. 
        password VARCHAR(255) NOT NULL,
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
+## Usage
+
+### Register:
+
+- Go to `register.php` to create a new account.
+- Input validation ensures:
+  - Usernames are unique.
+  - Emails are valid and unique.
+  - Passwords meet the complexity requirements.
+- Temporary or disposable email domains (e.g., `mailinator.com`, `tempmail.com`) are blocked during registration.
+
+### Login:
+
+- Go to `login.php` and enter your username/email and password.
+- If the credentials are correct, you’ll be redirected to `dashboard.php`.
+
+### Dashboard:
+
+- After logging in, you’ll have access to a personalized dashboard.
+- The dashboard will display user-specific content, including recent activity and account details.
+
+### Logout:
+
+- Log out via the link in the sidebar to end the session.
+- This will destroy the session and return you to the login page.
 
