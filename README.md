@@ -1,8 +1,9 @@
 # peopleone-phptask
-Auth System
+
+#Auth System
 A simple user authentication system implemented with PHP, MySQL, and Bootstrap. This system provides essential authentication features, including user registration, login, session management, and protection against CSRF attacks. The UI is built using Bootstrap for responsiveness and accessibility.
 
-Features
+#Features
      User Registration: Users can create accounts with unique usernames, valid email addresses, and secure passwords.
      User Login: Login functionality with session-based authentication.
      Logout: Users can securely log out, destroying the session.
@@ -12,7 +13,7 @@ Features
      Responsive Design: The UI is built with Bootstrap, making it responsive and accessible.
 
 
-Database Setup:
+#Database Setup:
 
 Create a MySQL database (e.g., auth_system).
 
